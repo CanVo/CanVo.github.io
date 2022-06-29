@@ -1,5 +1,8 @@
 WIP Blog
 
+Can be reached at:
+`canvo.github.io/blog`
+
 Useful commands:
 `npm run deploy`
 
