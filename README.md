@@ -18,3 +18,7 @@ Live content will be published to `gh-pages` branch.
 
 Using the following references:
 - https://www.youtube.com/watch?v=I2UBjN5ER4s&ab_channel=BrianDesign
+
+Credits:
+- favicon.ico Jewel icon by Icons8
+- Background video by Rostislav Uzunov from Pexels
