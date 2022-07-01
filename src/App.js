@@ -1,13 +1,13 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import Home from './components/pages/Home'
-import About from './components/pages/About'
-import Articles from './components/pages/Articles'
-import CTFwriteUps from './components/pages/CTFwriteups'
-import Misc from './components/pages/Misc'
-import Resources from './components/pages/Resources'
-import Credits from './components/pages/Credits'
+import Home from './components/pages/Home/Home'
+import About from './components/pages/About/About'
+import Articles from './components/pages/Article/Articles'
+import CTFwriteUps from './components/pages/CTFwriteups/CTFwriteups'
+import Misc from './components/pages/Misc/Misc'
+import Resources from './components/pages/Resources/Resources'
+import Credits from './components/pages/Credits/Credits'
 
 function App() {
   return (
