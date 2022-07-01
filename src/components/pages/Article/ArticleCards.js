@@ -1,10 +1,10 @@
 import React from 'react';
-import CardItem from './CardItem';
-import './Cards.css'
+import CardItem from '../../CardItem'
+import './ArticleCards.css'
 
-import testImage from '../assets/pictures/test.jpg'
+import testImage from '../../../assets/pictures/test.jpg'
 
-function Cards() {
+function ArticleCards() {
   return (
     <div className='cards'>
       <h1> Some things I worked on while bored... </h1>
@@ -55,4 +55,4 @@ function Cards() {
   )
 }
 
-export default Cards
+export default ArticleCards
