@@ -29,7 +29,6 @@ function Navbar() {
   window.addEventListener('resize', showButton);
 
 
-
   return (
     <div>
       <>
@@ -77,6 +76,7 @@ function Navbar() {
                   Credits
                 </Link>
               </li>
+
             </ul>
 
           </div>
