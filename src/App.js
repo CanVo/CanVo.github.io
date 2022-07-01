@@ -14,7 +14,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path='/blog/' exact element={<Home />} />
+          <Route path='/blog' exact element={<Home />} />
           <Route path='/blog/articles' exact element={<Articles />} />
           <Route path='/blog/ctf-writeups' exact element={<CTFwriteUps/>} />
           <Route path='/blog/Misc' exact element={<Misc />} />
