@@ -35,4 +35,6 @@ Live content will be published on to the `gh-pages` branch.
 - Plan / structure how the CTF section will be laid out. Things to consider: Categories, CTF name, CTF Problem, Images and files. Can get fancy with this.
 - Plan the credits section. Should it be in the layout of cards? Should it just be one big page? etc.
 - Clean up unneeded files from react app initialization.
-- Figure out how to lay out the url directory names of articles. Several approaches such as first couple words with hyphen, hashing it then getting x amount of chars, etc.
+- Figure out how to lay out the url directory names of articles. Several approaches such as using first several title words with hyphen inbetween, hashing it then getting 'x' amount of chars, etc.
+- Perhaps add a search bar looking for tags or keywords. Store articles with relation to tags? Maybe instead of a search bar, I can have a box to filter for categories? Like how filtering for threads on forums work.
+- First article probably about learning the PE file format and drilling that in.
