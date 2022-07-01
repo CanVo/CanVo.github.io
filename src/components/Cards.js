@@ -19,21 +19,21 @@ function Cards() {
               src={testImage}
               text="Blah Blah Blah"
               label="Tag"
-              path='/blog/articles/article1'
+              path='/articles/article1'
             />
 
             <CardItem 
               src={testImage}
               text="Blah Blah Blah"
               label="Tag"
-              path='/blog/articles/article2'
+              path='/articles/article2'
             />
 
             <CardItem 
               src={testImage}
               text="Blah Blah Blah"
               label="Tag"
-              path='/blog/articles/article3'
+              path='/articles/article3'
             />
 
           </ul>
@@ -44,7 +44,7 @@ function Cards() {
               src={testImage}
               text="Blah Blah Blah"
               label="Tag"
-              path='/blog/articles/article4'
+              path='/articles/article4'
             />
 
           </ul>
