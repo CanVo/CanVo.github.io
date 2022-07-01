@@ -1,6 +1,7 @@
 import './App.css';
 import Navbar from './components/Navbar';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+/* Need to use HashRouter since BrowserRouter doesn't play nicely with gh pages*/
+import { HashRouter as Router, Routes, Route} from 'react-router-dom'
 import Home from './components/pages/Home/Home'
 import About from './components/pages/About/About'
 import Articles from './components/pages/Article/Articles'
@@ -12,7 +13,7 @@ import Credits from './components/pages/Credits/Credits'
 function App() {
   return (
     <>
-      <Router>
+      <Router basename="/">
         <Navbar />
         <Routes>
           <Route path='/' exact element={<Home />} />
