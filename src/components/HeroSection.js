@@ -1,5 +1,4 @@
 import React from 'react'
-import { Button } from './Button'
 import './HeroSection.css';
 import '../App.css'
 import heroVideo from '../assets/videos/pexels-rostislav-uzunov-9867271.mp4'

@@ -39,7 +39,7 @@
   /* In the event of adding more page sections, update the 'grid-template-columns' value*/
   .nav-menu {
     display: grid;
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(6, auto);
     grid-gap: 10px;
     list-style: none;
     text-align: center;
