@@ -3,7 +3,7 @@
 Wanted some place to jot down my notes and publish for easy management rather than having to store it all locally or in a physical journal.
 
 ## Blog can be reached at:
-https://canvo.github.io/blog
+https://canvo.github.io/
 
 ## Useful commands/stuff for me:
 
@@ -20,6 +20,7 @@ Live content will be published on to the `gh-pages` branch.
 
 ## References for blog creation
 - https://www.youtube.com/watch?v=I2UBjN5ER4s&ab_channel=BrianDesign
+- https://www.youtube.com/watch?v=JcHLxzrsRS4&ab_channel=Arslan
 
 ## Credits
 - favicon.ico Jewel icon by Icons8
@@ -38,4 +39,4 @@ Live content will be published on to the `gh-pages` branch.
 - Figure out how to lay out the url directory names of articles. Several approaches such as using first several title words with hyphen inbetween, hashing it then getting 'x' amount of chars, etc.
 - Perhaps add a search bar looking for tags or keywords. Store articles with relation to tags? Maybe instead of a search bar, I can have a box to filter for categories? Like how filtering for threads on forums work.
 - First article probably about learning the PE file format and drilling that in.
-- Mention / disclaimer that all posts / opinions do not reflect or are not related to any employers I'm currently with. Everything I do here is independent and on my own time. I do not advocate, condone, or promote breaking laws. Everything I showcase here on my blog is purely for educational purposes.
+- Mention / disclaimer that all posts / opinions do not reflect or are not related to any employers I'm currently with. Everything I do here is independent and on my own time. I do not advocate, condone, or promote breaking any laws. Everything I showcase here on my blog is purely for educational purposes.
