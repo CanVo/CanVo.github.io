@@ -6,18 +6,18 @@ import 'aos/dist/aos.css';
 function CardItem(properties) {
 
   useEffect (() => {
-    Aos.init({duration: 2000});
+    Aos.init({duration: 1500});
   }, []);
-
 
   /* Refer to AOS docs for the type of fades we can use: https://michalsnik.github.io/aos/ */
   /* Fades will be for the `data-aos=` field. */
+
   
   return (
     <>
       <li data-aos={properties.fade} className="cards-item">
         <Link className="cards-item-link" to={properties.path}>
-          <figure className="cards-item-pic-wrap" data-category={properties.label}>
+          <figure className={`cards-item-pic-wrap ${properties.tagColor}`} data-category={properties.label}>
             <img src={properties.src} alt="Travel Image" className="cards-item-img" />
           </figure>
           <div className="cards-item-info">
