@@ -14,130 +14,158 @@
   margin: auto;
 }
 
-
-
 .cards {
-    padding: 4rem;
-    background: #fff;
-  }
+  padding: 4rem;
+  background: #fff;
+}
   
-  h1 {
-    text-align: center;
-  }
+.featured-header {
+  text-align: center;
+  line-height:3;
+}
+
+.main-articles-header {
+  text-align: center;
+  line-height:4;
+}
   
-  /* Play around with this section to get article boxes just right */
-  .cards-container {
-    display: legacy;
-    flex-flow: column;
-    align-items: center;
-    max-width: 1120px;
-    width: 90%;
-    margin: 0 auto;
+/* Play around with this section to get article boxes just right */
+.cards-container {
+  display: legacy;
+  flex-flow: column;
+  align-items: center;
+  max-width: 1120px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.cards-wrapper {
+  position: relative;
+  margin: -30px 0 45px;
+}
+
+.cards-items-featured {
+  margin-bottom: 24px;
+}
+
+.cards-items-main {
+  margin-bottom: 24px;
+}
+
+.cards-item {
+  display: flex;
+  flex: 1;
+  margin: 0 1rem;
+  border-radius: 10px;
+}
+
+.cards-item-link {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  border-radius: 10px;
+  overflow: hidden;
+  height: 100%;
+  text-decoration: none;
+}
+
+.fade-img {
+  animation-name: fade-img;
+  animation-duration: 2s;
+}
+
+/* This is where the blue box on the thumbnail is*/
+/* Starts off hidden until we hit the articles page. Then it activates the pseudo ::after sections below */
+.cards-item-pic-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 67%;
+  overflow: hidden;
+  height: 100%;
+}
+
+.cards-item-pic-wrap::after {
+  content: attr(data-category);
+  position: absolute;
+  bottom: 0;
+  margin-left: 10px;
+  padding: 6px 8px;
+  max-width: calc((100%) - 60px);
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.cards-item-pic-wrap::after {
+  background-color: #ff5100;
+}
+
+.cards-item-pic-wrap.blue::after {
+  background-color: #1f98f4;
+}
+
+.cards-item-pic-wrap.red::after {
+  background-color: #db0404;
+}
+
+.cards-item-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  transition: all 0.2s linear;
+}
+
+/* This section is for when cursor hovers over thumbnail*/
+.cards-item-img:hover {
+  transform: scale(1.1);
+}
+
+.cards-item-info {
+  padding: 20px 30px 30px;
+}
+
+.cards-item-text {
+  color: #252e48;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+
+/* Resolution specific stuff. */
+@media only screen and (min-width: 1200px) {
+  .content-blog-container {
+    width: 84%;
   }
-  
-  .cards-wrapper {
-    position: relative;
-    margin: 50px 0 45px;
-  }
-  
-  .cards-items {
-    margin-bottom: 24px;
-  }
-  
-  .cards-item {
+}
+
+/* My normal screen resolution */
+@media only screen and (min-width: 1024px) {
+  .cards-items-featured-articles ul {
     display: flex;
-    flex: 1;
-    margin: 0 1rem;
-    border-radius: 10px;
   }
-  
-  .cards-item-link {
+
+  .cards-items-main-articles {
     display: flex;
-    flex-flow: column;
-    width: 100%;
-    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
-    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
-    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
-    border-radius: 10px;
-    overflow: hidden;
-    text-decoration: none;
-  }
-  
-  .cards-item-pic-wrap {
-    position: relative;
-    width: 100%;
-    padding-top: 67%;
-    overflow: hidden;
-  }
-  
-  .fade-img {
-    animation-name: fade-img;
-    animation-duration: 2s;
-  }
-  
-
-  /* This is where the blue box on the thumbnail is*/
-  .cards-item-pic-wrap::after {
-    content: attr(data-category);
-    position: absolute;
-    bottom: 0;
-    margin-left: 10px;
-    padding: 6px 8px;
-    max-width: calc((100%) - 60px);
-    font-size: 12px;
-    font-weight: 700;
-    color: #fff;
-    background-color: #1f98f4;
-    box-sizing: border-box;
-  }
-  
-  .cards-item-img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    height: 100%;
-    max-height: 100%;
-    object-fit: cover;
-    transition: all 0.2s linear;
-  }
-  
-  /* This section is for when cursor hovers over thumbnail*/
-  .cards-item-img:hover {
-    transform: scale(1.1);
-  }
-  
-  .cards-item-info {
-    padding: 20px 30px 30px;
-  }
-  
-  .cards-item-text {
-    color: #252e48;
-    font-size: 18px;
-    line-height: 24px;
+    flex-wrap: wrap;
+    padding-left: 5%;
   }
 
-
-  /* Resolution specific stuff. */
-  
-  @media only screen and (min-width: 1200px) {
-    .content-blog-container {
-      width: 84%;
-    }
+  .article {
+    flex: 0 0 500px; /* play with this number */
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  
-  @media only screen and (min-width: 1024px) {
-    .cards-items {
-      display: flex;
-    }
-  }
-  
-  @media only screen and (max-width: 1024px) {
-    .cards-item {
-      margin-bottom: 2rem;
-    }
-  }
+}
