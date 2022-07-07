@@ -26,10 +26,10 @@ function ArticleCards() {
 
               <CardItem 
                 src={testImage}
-                text="DLL Injection"
+                text="Traditional DLL Injection"
                 label="Windows"
                 tagColor="blue"
-                path='/articles/dll-injection'
+                path='/articles/traditional-dll-injection'
                 fade='zoom-in'
               />
 
@@ -44,7 +44,7 @@ function ArticleCards() {
             </ul>
           </div>
 
-          <h1 className="main-articles-header"> Things I worked on while bored...</h1>
+          <h1 className="main-articles-header"> Other stuff I worked on while bored...</h1>
           {/* Second ul section where main articles will reside. Consider placing in inverse order of date publication (oldest at bottom) */}
           <div className="cards-items-main-articles">
             <div className="article">

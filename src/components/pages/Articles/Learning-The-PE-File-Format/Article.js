@@ -1,16 +1,18 @@
 import React from 'react';
 import './Article.css';
+import TableOfContents from '../../../TableOfContents'
 
 
 function LearningThePEFileFormat() {
   
   return (
     <div className="page">
-      <div className="article"> 
+      <TableOfContents />
+      <div className="article-body"> 
         <main>
-          <h2 id="title">
+          <h1 className="title">
             Learning the PE File Format
-          </h2>
+          </h1>
           <h2 id="background">
             Background
           </h2>
@@ -50,6 +52,38 @@ function LearningThePEFileFormat() {
             Title 6
           </h2>
           <p> Blah blah blah </p>
+
+          <h2 id="Title7">
+            Title 4
+          </h2>
+          <p> Blah blah blah </p>
+
+          <h2 id="Title8">
+            Title 5
+          </h2>
+          <p> Blah blah blah </p>
+      
+          <h2 id="Title9">
+            Title 6
+          </h2>
+          <p> Blah blah blah </p>
+
+          <h2 id="Title10">
+            Title 4
+          </h2>
+          <p> Blah blah blah </p>
+
+          <h2 id="Title11">
+            Title 5
+          </h2>
+          <p> Blah blah blah </p>
+      
+          <h2 id="Title 12">
+            Title 6
+          </h2>
+          <p> Blah blah blah </p>
+
+
         </main>
       </div>
     </div>
