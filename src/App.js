@@ -7,7 +7,7 @@ import Navbar from './components/Navbar';
 /*Nav Bar Pages*/
 import Home from './components/pages/Home/Home'
 import About from './components/pages/About/About'
-import Articles from './components/pages/Article/Articles'
+import Articles from './components/pages/ArticleHub/Articles'
 import CTFwriteUps from './components/pages/CTFwriteups/CTFwriteups'
 import Misc from './components/pages/Misc/Misc'
 import Resources from './components/pages/Resources/Resources'
@@ -16,7 +16,7 @@ import Tags from './components/pages/Tags/Tags'
 
 /*Article Pages*/
 import LearningThePEFileFormat from './components/pages/Articles/Learning-The-PE-File-Format/Article'
-import DLLInjection from './components/pages/Articles/DLL-Injection/Article'
+import TraditionalDLLInjection from './components/pages/Articles/Traditional-DLL-Injection/Article'
 import VaRvaAndFileOffsets from './components/pages/Articles/VA-RVA-And-FileOffsets/Article'
 
 
@@ -36,10 +36,12 @@ function App() {
           <Route path='/about' exact element={<About />} />
           <Route path='/credits' exact element={<Credits />} />
 
-          {/* Article Routes */}
+          {/* Featured Article Routes */}
           <Route path='/articles/learning-the-pe-file-format' exact element={<LearningThePEFileFormat />}/>
-          <Route path='/articles/dll-injection' exact element={<DLLInjection />}/>
+          <Route path='/articles/traditional-dll-injection' exact element={<TraditionalDLLInjection />}/>
           <Route path='/articles/va-rva-and-file-offsets' exact element={<VaRvaAndFileOffsets />}/>
+
+          {/* Regular Article Routes */}
 
         </Routes>
       </Router>

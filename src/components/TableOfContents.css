@@ -1,9 +1,12 @@
 .tableOfContents nav {
-    font-size: 24px;
+    
+    
+    font-size: 20px;
     width: 220px;
     min-width: 220px;
-    padding: 36px;
-    margin: 8px;
+    padding: 38px;
+    margin: 30px;
+    /* Make sure whatever parent element or container has the display:flex property */
     align-self: flex-start;
     position: -webkit-sticky; /* Safari */
     position: sticky;
@@ -13,6 +16,12 @@
   }
   
 
+  /* When we shouldn't see a ToC anymore (screen too small) */
+  @media screen and (max-width: 900px) {
+    nav {
+      display: none;
+    }
+  }
   
   a {
     color: black;
@@ -30,5 +39,5 @@
   /*  Gives a little bit of buffer when header is navigated to */
   h2, h3 {
         padding-top: 16px;
-      margin-top: -16px;
+        margin-top: -16px;
   }

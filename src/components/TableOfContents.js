@@ -1,12 +1,14 @@
 import React from 'react'
 import './TableOfContents.css'
 
-/* Code taken from Emma's tutorial for table of contents: https://www.emgoto.com/react-table-of-contents/ */
+// Taken and referenced from Emma Goto's tutorial on Table of Contents creation
+// https://www.emgoto.com/react-table-of-contents/
+
 /**
  * This renders an item in the table of contents list.
  * scrollIntoView is used to ensure that when a user clicks on an item, it will smoothly scroll.
  */
- const Headings = ({ headings, activeId }) => (
+const Headings = ({ headings, activeId }) => (
   <ul>
     {headings.map((heading) => (
       <li key={heading.id} className={heading.id === activeId ? "active" : ""}>
@@ -119,7 +121,9 @@ const useIntersectionObserver = (setActiveId) => {
       }
     };
 
-    const observer = new IntersectionObserver(callback, { root: document.querySelector("iframe"), rootMargin: "500px" });
+
+    /* Adjust rootMargin values if ToC active highlight is not working right */
+    const observer = new IntersectionObserver(callback, { root: document.querySelector("iframe"), rootMargin: "-110px 0px -40% 0px" });
 
     const headingElements = Array.from(document.querySelectorAll("h2, h3"));
 
@@ -141,6 +145,7 @@ const TableOfContents = () => {
     <div className="tableOfContents">
       <nav aria-label="Table of contents">
         <Headings headings={nestedHeadings} activeId={activeId} />
+        
       </nav>
     </div>
   );
