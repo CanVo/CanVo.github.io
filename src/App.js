@@ -1,10 +1,12 @@
+import './App.css';
+
 /* Need to use HashRouter since BrowserRouter doesn't play nicely with gh pages*/
 import { HashRouter as Router, Routes, Route} from 'react-router-dom'
 
-import './App.css';
+/* Import the navigation bar that will be at the top of the blog */
 import Navbar from './components/Navbar';
 
-/*Nav Bar Pages*/
+/* Nav Bar Pages */
 import Home from './components/pages/Home/Home'
 import About from './components/pages/About/About'
 import Articles from './components/pages/ArticleHub/Articles'
@@ -14,7 +16,7 @@ import Resources from './components/pages/Resources/Resources'
 import Credits from './components/pages/Credits/Credits'
 import Tags from './components/pages/Tags/Tags'
 
-/*Article Pages*/
+/* Article Pages */
 import LearningThePEFileFormat from './components/pages/Articles/Learning-The-PE-File-Format/Article'
 import TraditionalDLLInjection from './components/pages/Articles/Traditional-DLL-Injection/Article'
 import VaRvaAndFileOffsets from './components/pages/Articles/VA-RVA-And-FileOffsets/Article'
