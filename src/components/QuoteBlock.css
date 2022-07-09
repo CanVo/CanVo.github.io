@@ -44,10 +44,17 @@
     width: 200px;
 }
 
+
+/*
+
+*/
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
 .otro-blockquote{
   font-size: 1.4em;
-  width:60%;
+  
+  /* Inherit the width of the article */
+  width: inherit;
   margin:50px auto;
   font-family:Open Sans;
   font-style:italic;
@@ -59,6 +66,7 @@
   background:#EDEDED;
 }
 
+/* This is the green quote at the top left of the quote block */
 .otro-blockquote::before{
   font-family:Arial;
   content: "\201C";

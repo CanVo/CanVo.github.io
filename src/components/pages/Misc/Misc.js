@@ -3,7 +3,9 @@ import '../../../App.css';
 
 function Misc () {
   return (
-    <h1> Misc </h1>
+    <div className="under-construction-block">
+      <img src={'./assets/images/test/under-construction.gif'} alt="pic1" />
+    </div>
   );
 }
 

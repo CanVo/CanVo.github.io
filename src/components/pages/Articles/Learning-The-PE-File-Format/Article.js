@@ -29,7 +29,7 @@ function LearningThePEFileFormat() {
 
           {/* Test */}
           <div className="article-image-container">
-            <img src={'./assets/images/test/test.jpg'} alt="pic1" />
+            <img src={'./assets/images/test/test2.jpg'} alt="pic1" />
           </div>
 
           <QuoteBlock

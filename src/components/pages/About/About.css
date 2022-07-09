@@ -1,4 +1,4 @@
-.credits-page {
+.about-page {
     background-color: #fff;
     width: 100%;
     height: 100%;
@@ -8,14 +8,14 @@
     display: flex;
 }
 
-.credits-title {
+.about-title {
     font-size: 20px;
     font-size: calc(3vw + 1vh);
     text-align: center;
     padding-bottom:calc(4vw + 4vh);
 }
 
-.credits-body {
+.about-body {
     letter-spacing: 0px;
     color: #313131;
 
@@ -30,14 +30,30 @@
 }
 
 
-.credits-body h2 {
+/* In case when I need to resize picture */
+/* https://stackoverflow.com/questions/56470223/how-to-resize-img-in-react */
+/* TODO: https://blog.hubspot.com/website/css-border-radius-circle */
+/* https://www.sliderrevolution.com/resources/css-border-animation/ */
+.about-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Scales the image for smaller resolutons */
+.about-image-container img {
+    max-width: 100%;
+}
+
+
+.about-body h2 {
     font-size: 16px;
     font-size: 2.5vw;
     border-bottom: 1px solid black;
     padding-bottom:3px;
 }
 
-.credits-body p {
+.about-body p {
     font-size: calc(0.82vw + 0.82vh);
     display: block;
     margin-block-start: 1em;
@@ -45,4 +61,13 @@
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-family: 'Hind'
+}
+
+.about-body li {
+    font-size: calc(0.82vw + 0.82vh);
+    font-family: 'Hind';
+}
+
+.about-section {
+    padding-bottom: 5%;
 }

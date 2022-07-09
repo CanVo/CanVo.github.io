@@ -3,7 +3,9 @@ import '../../../App.css';
 
 function CTFwriteups () {
   return (
-    <h1> CTF Writeups </h1>
+    <div className="under-construction-block">
+      <img src={'./assets/images/test/under-construction.gif'} alt="pic1" />
+    </div>
   );
 }
 
