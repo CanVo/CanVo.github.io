@@ -30,6 +30,22 @@
     left: 15vw;
 }
 
+.article-body h2 {
+    font-size: 16px;
+    font-size: 2.5vw;
+    border-bottom: 1px solid black;
+    padding-bottom:3px;
+}
+
+.article-body p {
+    font-size: calc(0.82vw + 0.82vh);
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: 'Hind'
+}
 
 /* In case when I need to resize picture */
 /* https://stackoverflow.com/questions/56470223/how-to-resize-img-in-react */
@@ -39,20 +55,7 @@
     align-items: center;
 }
 
-
-.article-body h2 {
-    font-size: 16px;
-    font-size: 2.5vw;
-    border-bottom: 1px solid black;
-    padding-bottom:3px;
-}
-
-.article-body p {
-    font-size: calc(0.85vw + 0.85vh);
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-family: 'Hind'
+/* Scales the image for smaller resolutons */
+.article-image-container img {
+    max-width: 100%;
 }

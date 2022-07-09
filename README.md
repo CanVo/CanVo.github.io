@@ -10,7 +10,7 @@ https://canvo.github.io/ (Will soon tie this to a proper domain).
 View locally
 `npm run start`
 
-Published Changes
+Publish Changes
 `npm run deploy`
 
 Comment in jsx files:
@@ -24,12 +24,10 @@ Live content will be published on to the `gh-pages` branch.
 
 ## Credits
 - favicon.ico Jewel icon by Icons8
-- Background video by Rostislav Uzunov from Pexels
+- Home page background video by Rostislav Uzunov from Pexels
 
 ## TO-DO
 - Add and populate a proper Credits section to give credit for the royalty free assets I used.
 - Add & tie domain to blog.
 - Plan / structure how the CTF section will be laid out. Things to consider: Categories, CTF name, CTF Problem, Images and files. Can get fancy with this.
 - Plan the credits section. Should it be in the layout of cards? Should it just be one big page? etc.
-- Clean up unneeded files from react app initialization.
-- Mention / disclaimer that all posts / opinions do not reflect or are not related to any employers I'm currently with. Everything I do here is independent and on my own time. I do not advocate, condone, or promote breaking any laws. Everything I showcase here on my blog is purely for educational purposes.
