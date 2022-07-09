@@ -1,7 +1,6 @@
 import React from 'react'
 import './HeroSection.css';
 import '../App.css'
-import heroVideo from '../assets/videos/pexels-rostislav-uzunov-9867271.mp4'
 
 function HeroSection() {
   return (
@@ -12,7 +11,7 @@ function HeroSection() {
         muted 
         id='hero-video'
       >
-        <source src={heroVideo} type='video/mp4' />
+        <source src='./assets/videos/pexels-rostislav-uzunov-9867271.mp4' type='video/mp4' />
       </video>
     </div>
   )

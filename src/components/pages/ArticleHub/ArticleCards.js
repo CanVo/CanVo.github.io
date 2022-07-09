@@ -2,8 +2,6 @@ import CardItem from '../../CardItem'
 import './ArticleCards.css'
 import 'aos/dist/aos.css';
 
-import testImage from '../../../assets/pictures/test.jpg'
-
 function ArticleCards() {
 
   return (
@@ -16,7 +14,7 @@ function ArticleCards() {
             <ul>
               {/* Modify this section if you ever add more stuff in */}
               <CardItem 
-                src={testImage}
+                src='./assets/images/article-images/Learning-The-PE-File-Format/thumbnail.jpg'
                 text="Learning the PE File Format"
                 label="Windows"
                 tagColor="blue"
@@ -25,7 +23,7 @@ function ArticleCards() {
               />
 
               <CardItem 
-                src={testImage}
+                src='./assets/images/article-images/Traditional-DLL-Injection/thumbnail.jpg'
                 text="Traditional DLL Injection"
                 label="Windows"
                 tagColor="blue"
@@ -34,15 +32,17 @@ function ArticleCards() {
               />
 
               <CardItem 
-                src={testImage}
+                src='./assets/images/article-images/VA-RVA-And-FileOffsets/thumbnail.jpg'
                 text="VA, RVA and File Offsets"
                 label="Reverse Engineering"
                 tagColor="red"
                 path='/articles/va-rva-and-file-offsets'
                 fade='zoom-in'
               />
+              
             </ul>
           </div>
+
 
           <h1 className="main-articles-header"> Other stuff I worked on while bored...</h1>
           {/* Second ul section where main articles will reside. Consider placing in inverse order of date publication (oldest at bottom) */}
@@ -50,7 +50,7 @@ function ArticleCards() {
             <div className="article">
                 <CardItem
                   className="article"
-                  src={testImage}
+                  src='./assets/images/test/test.jpg'
                   text="Blah Blah Blah1"
                   label="Tag"
                   path='/articles/article4'
@@ -61,7 +61,7 @@ function ArticleCards() {
               <div className="article">
                 <CardItem 
                   className="article"
-                  src={testImage}
+                  src='./assets/images/test/test.jpg'
                   text="Blah Blah Blah2"
                   label="Tag"
                   path='/articles/article5'
@@ -72,7 +72,7 @@ function ArticleCards() {
               <div className="article">
                 <CardItem 
                   className="article"
-                  src={testImage}
+                  src='./assets/images/test/test.jpg'
                   text="Blah Blah Blah3"
                   label="Tag"
                   path='/articles/article6'
@@ -83,7 +83,7 @@ function ArticleCards() {
               <div className="article">
                 <CardItem 
                   className="article"
-                  src={testImage}
+                  src='./assets/images/test/test.jpg'
                   text="Blah Blah Blah4"
                   label="Tag"
                   path='/articles/article7'
@@ -94,7 +94,7 @@ function ArticleCards() {
               <div className="article">
                 <CardItem 
                   className="article"
-                  src={testImage}
+                  src='./assets/images/test/test.jpg'
                   text="Blah Blah Blah5"
                   label="Tag"
                   path='/articles/article8'
@@ -105,7 +105,7 @@ function ArticleCards() {
               <div className="article">
                 <CardItem 
                   className="article"
-                  src={testImage}
+                  src='./assets/images/test/test.jpg'
                   text="Blah Blah Blah6"
                   label="Tag"
                   path='/articles/article9'
@@ -116,7 +116,7 @@ function ArticleCards() {
               <div className="article">
                 <CardItem 
                   className="article"
-                  src={testImage}
+                  src='./assets/images/test/test.jpg'
                   text="Blah Blah Blah7"
                   label="Tag"
                   path='/articles/article10'
@@ -127,7 +127,7 @@ function ArticleCards() {
               <div className="article">
                 <CardItem 
                   className="article"
-                  src={testImage}
+                  src='./assets/images/test/test.jpg'
                   text="Blah Blah Blah8"
                   label="Tag"
                   path='/articles/article11'
