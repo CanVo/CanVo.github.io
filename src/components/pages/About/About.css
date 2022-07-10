@@ -1,19 +1,32 @@
 .about-page {
-    background-color: #fff;
+    /* Fill in viewable screen */
     width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 3;
-    padding-bottom: 110px;
+    height: 100vh;
+    margin: 0px;
+
+    /* If children element is exceeding length, overflow to it */
+    overflow: auto;
+    background-color: #1d1f21;
 }
 
 .about-body h1 {
     font-size: 16px;
     font-size: 2.5vw;
     padding-bottom:2px;
+    color: #2bbc8a;
+    font-family: 'JetBrains Mono', monospace;
 }
 
+.about-body p {
+    color: #c9cacc;
+}
 
+.about-body ul {
+    color: #c9cacc;
+    font-family: 'Hind';
+    margin-block-start: 1em;
+    margin-inline-start: 20px;
+}
 
 
 /* Resolution specific configs */
@@ -76,8 +89,6 @@
 
     .about-section li {
         font-size: calc(0.60vw + 0.60vh);
-        margin-block-start: 1em;
-        margin-inline-start: 20px;
     }
 
 }
@@ -111,12 +122,11 @@
         margin-block-end: 1em;
         margin-inline-start: 0px;
         margin-inline-end: 0px;
-        font-family: 'Hind'
+        font-family: 'Hind';
     }
     
     .about-body li {
         font-size: calc(0.82vw + 0.82vh);
-        font-family: 'Hind';
     }
 
     .about-image-container {

@@ -1,18 +1,9 @@
 .credits-page {
-    background-color: #fff;
     width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 3;
-    padding-bottom: 110px;
-    display: flex;
-}
-
-.credits-title {
-    font-size: 20px;
-    font-size: calc(3vw + 1vh);
-    text-align: center;
-    padding-bottom:calc(4vw + 4vh);
+    height: 100vh;
+    margin: 0px;
+    background-color: #1d1f21;
+    overflow: auto;
 }
 
 .credits-body {
@@ -29,11 +20,11 @@
     margin-right: auto;
 }
 
-
-.credits-body h2 {
+.credits-body h1 {
     font-size: 16px;
     font-size: 2.5vw;
-    border-bottom: 1px solid black;
+    color: #2bbc8a;
+    font-family: 'JetBrains Mono', monospace;
     padding-bottom:3px;
 }
 
@@ -44,5 +35,6 @@
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    font-family: 'Hind'
+    font-family: 'Hind';
+    color: #c9cacc;
 }
