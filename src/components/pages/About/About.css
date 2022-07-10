@@ -8,41 +8,10 @@
     display: flex;
 }
 
-.about-title {
-    font-size: 20px;
-    font-size: calc(3vw + 1vh);
-    text-align: center;
-    padding-bottom:calc(4vw + 4vh);
-}
-
-.about-body {
-    letter-spacing: 0px;
-    color: #313131;
-
-    /*Article sentence length*/
-    width: calc(70vw + 1vh);
-
-    /* Distance between nav bar and title */
-    padding: 5vw 0px;
-
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-/* In case when I need to resize picture */
-/* https://stackoverflow.com/questions/56470223/how-to-resize-img-in-react */
-/* TODO: https://blog.hubspot.com/website/css-border-radius-circle */
-/* https://www.sliderrevolution.com/resources/css-border-animation/ */
-.about-image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 /* Scales the image for smaller resolutons */
 .about-image-container img {
     max-width: 100%;
+    width: calc(70vw + 1vh);
 }
 
 
@@ -70,4 +39,74 @@
 
 .about-section {
     padding-bottom: 5%;
+}
+
+
+
+
+/* Resolution specific configs */
+@media screen and (min-width: 1400px){
+    .about-body {
+        letter-spacing: 0px;
+        color: #313131;
+        display: flex;
+
+        /* Space between pfp and about me sections */
+        column-gap: 65px;
+
+        /*Article sentence length*/
+        width: calc(70vw + 1vh);
+
+        /* Distance between nav bar and title */
+        padding: 5vw 0px;
+
+        /* Takes care of centering for this page */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-image-container {
+        /* Distance between nav bar and title */
+        padding: 5vw 0px;
+        display:block;
+        margin:auto;
+    }
+
+    .about-sections {
+        display:block;
+        margin:auto;
+    }
+
+}
+
+
+
+/* In case when I need to resize picture */
+/* https://stackoverflow.com/questions/56470223/how-to-resize-img-in-react */
+/* TODO: https://blog.hubspot.com/website/css-border-radius-circle */
+/* https://www.sliderrevolution.com/resources/css-border-animation/ */
+
+/* If resolution is too small, move my profile picture to the top */
+@media screen and (max-width: 1400px){
+    
+    .about-body {
+        letter-spacing: 0px;
+        color: #313131;
+    
+        /*Article sentence length*/
+        width: calc(70vw + 1vh);
+    
+        /* Distance between nav bar and title */
+        padding: 5vw 0px;
+    
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+
+    .about-image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
