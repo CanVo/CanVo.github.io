@@ -8,18 +8,6 @@
     display: flex;
 }
 
-/* Scales the image for smaller resolutons */
-.about-image-container img {
-    max-width: 100%;
-    width: calc(70vw + 1vh);
-    display: block;
-    border-radius: 50%;
-    border: 5px transparent;
-    /* Border shadow of pfp */
-    box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 1);
-}
-
-
 .about-body h2 {
     font-size: 16px;
     font-size: 2.5vw;
@@ -77,6 +65,17 @@
         margin:auto;
     }
 
+    /* Scales the image for smaller resolutons */
+    .about-image-container img {
+        max-width: 100%;
+        width: calc(30vw + 30vh);
+        display: block;
+        border-radius: 50%;
+        border: 5px transparent;
+        /* Border shadow of pfp */
+        box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 1);
+    }
+
     .about-sections {
         display:block;
         margin:auto;
@@ -88,12 +87,9 @@
 
 /* In case when I need to resize picture */
 /* https://stackoverflow.com/questions/56470223/how-to-resize-img-in-react */
-/* TODO: https://blog.hubspot.com/website/css-border-radius-circle */
-/* https://www.sliderrevolution.com/resources/css-border-animation/ */
 
 /* If resolution is too small, move my profile picture to the top */
 @media screen and (max-width: 1400px){
-    
     .about-body {
         letter-spacing: 0px;
         color: #313131;
@@ -113,5 +109,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-top: 20px;
+        padding-bottom: 10%;
+    }
+
+    .about-image-container img {
+        max-width: 100%;
+        width: calc(20vw + 20vh);
+        display: block;
+        border-radius: 50%;
+        border: 5px transparent;
+        /* Border shadow of pfp */
+        box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 1);
     }
 }

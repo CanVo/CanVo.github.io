@@ -31,3 +31,4 @@ Live content will be published on to the `gh-pages` branch.
 - Add & tie domain to blog.
 - Plan / structure how the CTF section will be laid out. Things to consider: Categories, CTF name, CTF Problem, Images and files. Can get fancy with this.
 - Plan the credits section. Should it be in the layout of cards? Should it just be one big page? etc.
+- Look into seeing if I can fade a whole page upon clicking on it.
