@@ -32,18 +32,21 @@ function About () {
             </h1>
             <p> Security professional who's just trying to get better everyday. </p>
             <p> My main interests include: </p>
-            <li> 
-              Anti-Cheats
-            </li>
-            <li> 
-              Reverse Engineering
-            </li> 
-            <li>
-              Windows
-            </li>
-            <li>
-              General Security
-            </li>
+            <ul>
+              <li> 
+                Anti-Cheats
+              </li>
+              <li> 
+                Reverse Engineering
+              </li> 
+              <li>
+                Windows
+              </li>
+              <li>
+                General Security
+              </li>
+            </ul>
+            
           </div>
 
           <div className="about-section">
