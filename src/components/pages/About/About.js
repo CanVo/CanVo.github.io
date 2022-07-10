@@ -16,13 +16,12 @@ function About () {
   return (
     <div className="about-page">
       <div className="about-body">
-
+        
         <div className="about-image-container" 
           data-aos="flip-right"
           data-aos-delay="200"
           data-aos-duration="1000"
           >
-
           <img src={'./assets/images/about/profile-picture.jpg'} alt="pic1" />
         </div>
 

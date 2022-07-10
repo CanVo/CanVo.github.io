@@ -5,33 +5,12 @@
     position: absolute;
     z-index: 3;
     padding-bottom: 110px;
-    display: flex;
 }
 
-.about-body h2 {
+.about-body h1 {
     font-size: 16px;
     font-size: 2.5vw;
-    border-bottom: 1px solid black;
-    padding-bottom:3px;
-}
-
-.about-body p {
-    font-size: calc(0.82vw + 0.82vh);
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-family: 'Hind'
-}
-
-.about-body li {
-    font-size: calc(0.82vw + 0.82vh);
-    font-family: 'Hind';
-}
-
-.about-section {
-    padding-bottom: 5%;
+    padding-bottom:2px;
 }
 
 
@@ -45,17 +24,30 @@
         display: flex;
 
         /* Space between pfp and about me sections */
-        column-gap: 65px;
+        column-gap: 85px;
 
         /*Article sentence length*/
         width: calc(70vw + 1vh);
 
         /* Distance between nav bar and title */
-        padding: 5vw 0px;
+        padding-top: 25px;
 
         /* Takes care of centering for this page */
-        margin-left: auto;
-        margin-right: auto;
+        margin:auto;
+    }
+
+    .about-body p {
+        font-size: calc(0.60vw + 0.82vh);
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-family: 'Hind'
+    }
+    
+    .about-body li {
+        font-size: calc(0.82vw + 0.82vh);
     }
 
     .about-image-container {
@@ -79,6 +71,12 @@
     .about-sections {
         display:block;
         margin:auto;
+        /* Top of about me section*/
+        padding-top: 10px;
+    }
+
+    .about-section {
+        padding-bottom: 5%;
     }
 
 }
@@ -103,6 +101,21 @@
         margin-left: auto;
         margin-right: auto;
     
+    }
+
+    .about-body p {
+        font-size: calc(0.82vw + 0.82vh);
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-family: 'Hind'
+    }
+    
+    .about-body li {
+        font-size: calc(0.82vw + 0.82vh);
+        font-family: 'Hind';
     }
 
     .about-image-container {
