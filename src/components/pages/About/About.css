@@ -12,6 +12,11 @@
 .about-image-container img {
     max-width: 100%;
     width: calc(70vw + 1vh);
+    display: block;
+    border-radius: 50%;
+    border: 5px transparent;
+    /* Border shadow of pfp */
+    box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 1);
 }
 
 

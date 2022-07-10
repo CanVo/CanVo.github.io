@@ -1,13 +1,28 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../../../App.css'
 import './About.css'
+/* Import fade library for elements */
+import Aos from 'aos';
+
+
 
 function About () {
+
+  useEffect (() => {
+    Aos.init({duration: 1500});
+  }, []);
+
+
   return (
     <div className="about-page">
       <div className="about-body">
 
-        <div className="about-image-container">
+        <div className="about-image-container" 
+          data-aos="flip-right"
+          data-aos-delay="200"
+          data-aos-duration="1000"
+          >
+
           <img src={'./assets/images/about/profile-picture.jpg'} alt="pic1" />
         </div>
 
