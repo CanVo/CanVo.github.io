@@ -1,11 +1,10 @@
 .resources-page {
-    background-color: #fff;
+    /* Fill in viewable screen */
     width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 3;
-    padding-bottom: 110px;
-    display: flex;
+    height: 100vh;
+    margin: 0px;
+
+    /* If children element is exceeding length, overflow to it */
     overflow: auto;
     background-color: #1d1f21;
 }
