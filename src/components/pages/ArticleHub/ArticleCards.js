@@ -1,11 +1,10 @@
-import CardItem from '../../CardItem'
-import './ArticleCards.css'
-import 'aos/dist/aos.css';
+import CardItem from '../../CardItem';
+import './ArticleCards.css';
 
 function ArticleCards() {
 
   return (
-    <div className='cards'>
+    <div className='article-hub-page'>
       <div className="cards-container" >
         <div className="cards-wrapper">
           {/* This will be where the top 3 featured articles will reside on top of page */}

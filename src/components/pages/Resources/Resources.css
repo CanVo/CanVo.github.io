@@ -1,11 +1,9 @@
 .resources-page {
     /* Fill in viewable screen */
     width: 100%;
-    height: 100vh;
+    height: 100%;
     margin: 0px;
-
-    /* If children element is exceeding length, overflow to it */
-    overflow: auto;
+    overflow-y:auto;
     background-color: #1d1f21;
 }
 
@@ -38,6 +36,7 @@
 }
 
 .resources-sections h3 {
+    font-size: calc(0.82vw + 0.82vh);
     padding-bottom:3px;
     font-family: 'JetBrains Mono', monospace;
     color: white;

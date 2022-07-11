@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../../../App.css';
 import HeroSection from '../../HeroSection';
 
 function Home () {
   return (
-    <>
-      <HeroSection />
-    </>
+    <div className="home-page">
+      <div className="home-container">
+        <HeroSection />
+      </div>
+    </div>
   );
 }
 

@@ -25,7 +25,11 @@ function About () {
           <img src={'./assets/images/about/profile-picture.jpg'} alt="pic1" />
         </div>
 
-        <div className="about-sections">
+        <div className="about-sections"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-offset="0"
+        >
           <div className="about-section">
             <h1>
               About Me

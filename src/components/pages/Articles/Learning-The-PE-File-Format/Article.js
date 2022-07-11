@@ -1,13 +1,23 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import '../../../Article.css'
 import QuoteBlock from '../../../QuoteBlock'
 import DummyText from '../../../DummyText'
+import Aos from 'aos';
+
 
 function LearningThePEFileFormat() {
+  useEffect (() => {
+    Aos.init({duration: 800});
+  }, []);
   
   return (
     <div className="article-page">
-      <div className="article-body"> 
+      <div 
+        className="article-body"
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-offset="0"
+      > 
         <h1 className="article-title">
           Learning the PE File Format
         </h1>
