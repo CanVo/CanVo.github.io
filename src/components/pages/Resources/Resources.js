@@ -12,6 +12,9 @@ function Resources () {
   return (
     <div className="resources-page">
       <div className="resources-body"
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-offset="0"
       >
         <div className="resources-sections">
           <h1>

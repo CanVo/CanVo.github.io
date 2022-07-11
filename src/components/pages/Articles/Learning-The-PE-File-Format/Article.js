@@ -18,6 +18,7 @@ function LearningThePEFileFormat() {
         data-aos-easing="ease-in-back"
         data-aos-offset="0"
       > 
+
         <h1 className="article-title">
           Learning the PE File Format
         </h1>
