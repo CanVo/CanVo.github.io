@@ -1,11 +1,18 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import '../../../App.css';
 import './Resources.css';
+import Aos from 'aos';
 
 function Resources () {
+  useEffect (() => {
+    Aos.init({duration: 800});
+  }, []);
+
+
   return (
     <div className="resources-page">
-      <div className="resources-body">
+      <div className="resources-body"
+      >
         <div className="resources-sections">
           <h1>
             Books

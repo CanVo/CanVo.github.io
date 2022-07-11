@@ -1,3 +1,9 @@
+.article-hub-page {
+  padding: 4rem;
+  background: #fff;
+}
+
+
 .boxes {
   margin: 20px;
   margin-top: 150px;
@@ -13,20 +19,16 @@
   max-width: 50%;
   margin: auto;
 }
-
-.cards {
-  padding: 4rem;
-  background: #fff;
-}
   
 .featured-header {
+  font-size: calc(1.3vw + 1.3vh);
   text-align: center;
   line-height:3;
 }
 
 .main-articles-header {
+  font-size: calc(1.3vw + 1.3vh);
   text-align: center;
-  line-height:4;
 }
   
 /* Play around with this section to get article boxes just right */
@@ -154,6 +156,7 @@
 @media only screen and (min-width: 1024px) {
   .cards-items-featured-articles ul {
     display: flex;
+    padding-bottom: 5%;
   }
 
   .cards-items-main-articles {
