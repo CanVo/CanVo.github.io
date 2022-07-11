@@ -67,7 +67,7 @@
 
     .article-body {
         /*Article sentence length*/
-        width: calc(55vw + 1vh);
+        width: calc(50vw + 1vh);
     }
 
     .article-body h2 {

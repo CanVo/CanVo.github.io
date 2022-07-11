@@ -79,7 +79,7 @@
 }
 
 
-/* Resolution specific configs, above 1400px */
+/* Resolution specific configs, above 1400px width */
 @media screen and (min-width: 1400px){
     .about-image-container {
         /* Distance between nav bar and title */
@@ -127,7 +127,7 @@
 }
 
 
-/* For slightly smaller screens, (820px width --> 1400px width */
+/* For slightly smaller screens, (820px width --> 1400px width) */
 @media screen and (min-width: 820px) and (max-width: 1400px){
     .about-body {
         /*Article sentence length*/
