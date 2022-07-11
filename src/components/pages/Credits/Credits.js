@@ -16,9 +16,9 @@ function Credits () {
         data-aos-offset="0"
       >
         <h1> Special Thanks </h1>
-        <p> - You (for willing to read my janky code and ramblings) </p>
-        <p> - The helpful individuals who were kind and answered questions I had on forums </p>
-        <p> - Coffee </p>
+        <p> You (for willing to read my janky code and ramblings) </p>
+        <p> The helpful individuals who were kind and answered questions I had on forums </p>
+        <p> Coffee ☕ </p>
 
         <h1> Royalty Free Credit </h1>
         <p> 
