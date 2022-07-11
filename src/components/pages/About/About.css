@@ -1,13 +1,12 @@
-/* Global Settings */
-
+/* For Global */
 .about-page {
     /* Fill in viewable screen */
     width: 100%;
-    height: 100%;
+    height: max-content;
     margin: 0px;
 
     /* If children element is exceeding length, overflow to it */
-    overflow: auto;
+    overflow:auto; 
     background-color: #1d1f21;
 }
 
@@ -15,12 +14,20 @@
     /* Since the credits page is short, we gotta extend it all the way to viewable screen. */
     height: 100vh;
 
-    /* Hide double scrollbar when loading this page during transitions */
-    overflow: hidden;
+    /* Distance between nav bar and title */
+    padding: 5vw 0px;
+
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about-body p {
     color: #c9cacc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: 'Hind';
 }
 
 .about-body h1 {
@@ -60,7 +67,16 @@
     }
 }
 
+/* Scales the image for smaller resolutons */
+.about-image-container img {
+    max-width: 100%;
+    width: calc(30vw + 30vh);
 
+    border-radius: 50%;
+    border: 5px transparent;
+    /* Border shadow of pfp */
+    box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 1);
+}
 
 
 /* Resolution specific configs, above 1400px */
@@ -68,17 +84,6 @@
     .about-image-container {
         /* Distance between nav bar and title */
         padding: 5vw 0px;
-    }
-
-    /* Scales the image for smaller resolutons */
-    .about-image-container img {
-        max-width: 100%;
-        width: calc(30vw + 30vh);
-
-        border-radius: 50%;
-        border: 5px transparent;
-        /* Border shadow of pfp */
-        box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 1);
     }
 
     .about-body {
@@ -97,6 +102,9 @@
 
         /* Takes care of centering for this page */
         margin:auto;
+
+        /* Hide double scrollbar when loading this page during transitions */
+        overflow: hidden;
     }
 
     .about-sections {
@@ -111,11 +119,6 @@
 
     .about-section p {
         font-size: calc(0.60vw + 0.82vh);
-        margin-block-start: 1em;
-        margin-block-end: 1em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-        font-family: 'Hind'
     }
 
     .about-section li {
@@ -124,35 +127,21 @@
 }
 
 
-
-/* In case when I need to resize picture */
-/* https://stackoverflow.com/questions/56470223/how-to-resize-img-in-react */
-
-/* If resolution is too small, move my profile picture to the top */
-@media screen and (max-width: 1400px){
+/* For slightly smaller screens, (820px width --> 1400px width */
+@media screen and (min-width: 820px) and (max-width: 1400px){
     .about-body {
-        letter-spacing: 0px;
-        color: #313131;
-    
         /*Article sentence length*/
         width: calc(70vw + 1vh);
-    
-        /* Distance between nav bar and title */
-        padding: 5vw 0px;
-    
-        margin-left: auto;
-        margin-right: auto;
-    
+    }
+
+    /* Section Title: [About Me, About The Blog, Blog Disclaimer] */
+    .about-body h1 {
+        font-size: 62px;
+        padding-top: 32px;
     }
 
     .about-body p {
-        font-size: calc(0.82vw + 0.82vh);
-        display: block;
-        margin-block-start: 1em;
-        margin-block-end: 1em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-        font-family: 'Hind';
+        font-size: 35px;
     }
     
     .about-body li {
@@ -177,7 +166,101 @@
         box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 1);
     }
 
-    .about-section {
-        padding-bottom: 5%;
+    /* About Me rainbow list of interests */
+    .about-body li {
+        font-size: 30px;
+        margin-block-start: 0.5em;
+    }
+
+}
+
+
+/* For Tablets */
+@media screen and (min-width: 540px) and (max-width: 820px) {
+    .about-body {
+        /*Article sentence length*/
+        width: calc(70vw + 8vh);
+    }
+
+    /* Section Title: [About Me, About The Blog, Blog Disclaimer] */
+    .about-body h1 {
+        padding-top: 32px;
+        font-size: 62px;
+    }
+
+    /* Section body */
+    .about-body p {
+        font-size: 32px;
+    }
+
+    .about-image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 10%;
+    }
+
+    .about-image-container img {
+        max-width: 100%;
+        width: calc(20vw + 20vh);
+        display: block;
+        border-radius: 50%;
+        border: 5px transparent;
+        /* Border shadow of pfp */
+        box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 1);
+    }
+
+    /* About Me rainbow list of interests */
+    .about-body li {
+        font-size: 28px;
+        margin-block-start: 0.5em;
+    }
+}
+
+
+/* For Mobile */
+@media screen and (max-width: 540px){
+    .about-body {
+        /*Article sentence length*/
+        width: calc(70vw + 8vh);
+    }
+
+    /* Section Title: [About Me, About The Blog, Blog Disclaimer] */
+    .about-body h1 {
+        padding-top: 15px;
+        font-size: 36px;
+        text-align: center;
+    }
+
+    /* Section body */
+    .about-body p {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    /* About Me rainbow list of interests */
+    .about-body li {
+        font-size: 20px;
+        text-align: center;
+        margin-block-start: 1em;
+    }
+
+    .about-image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 10%;
+    }
+
+    .about-image-container img {
+        max-width: 100%;
+        width: calc(20vw + 20vh);
+        display: block;
+        border-radius: 50%;
+        border: 5px transparent;
+        /* Border shadow of pfp */
+        box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 1);
     }
 }

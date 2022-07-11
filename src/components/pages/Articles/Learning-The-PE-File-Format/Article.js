@@ -37,7 +37,6 @@ function LearningThePEFileFormat() {
         </h2>
         <p>{DummyText}</p>
 
-        {/* Test */}
         <div className="article-image-container">
           <img src={'./assets/images/test/test2.jpg'} alt="pic1" />
         </div>
