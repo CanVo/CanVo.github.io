@@ -3,15 +3,36 @@ import '../../../Article.css'
 import QuoteBlock from '../../../QuoteBlock'
 import DummyText from '../../../DummyText'
 import Aos from 'aos';
+// https://stackoverflow.com/questions/54875497/how-do-you-increase-the-typewriter-effect-speed-and-increase-cursor-size
+import TypeWriter from 'typewriter-effect';
 
 
 function LearningThePEFileFormat() {
+  
+  // Specific fade in duration for this unique article
   useEffect (() => {
-    Aos.init({duration: 800});
+    Aos.init({duration: 2100});
   }, []);
+
   
   return (
     <div className="article-page">
+        <div className="article-title">
+          <TypeWriter 
+            // Typewriter object options.
+            options={{
+              autoStart: true,
+              delay: 30
+            }}
+            // TypeWriter object method calls.
+            onInit={(typewriter) => {
+              typewriter.typeString("Learning The PE File Format")
+              .start();
+            }}
+          />
+        </div>
+      
+      {/* Main article body and contents */}
       <div 
         className="article-body"
         data-aos="fade-zoom-in"
@@ -19,9 +40,6 @@ function LearningThePEFileFormat() {
         data-aos-offset="0"
       > 
 
-        <h1 className="article-title">
-          Learning the PE File Format
-        </h1>
         <h2 id="background">
           Background
         </h2>
