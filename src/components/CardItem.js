@@ -12,7 +12,6 @@ function CardItem(properties) {
   /* Refer to AOS docs for the type of fades we can use: https://michalsnik.github.io/aos/ */
   /* Fades will be for the `data-aos=` field. */
 
-  
   return (
     <>
       <li className="cards-item" data-aos={properties.fade}>

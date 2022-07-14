@@ -9,7 +9,7 @@ import Navbar from './components/Navbar';
 /* Nav Bar Pages */
 import Home from './components/pages/Home/Home'
 import About from './components/pages/About/About'
-import Articles from './components/pages/ArticleHub/Articles'
+import Articles from './components/pages/ArticleHub/ArticleHub'
 import CTFwriteUps from './components/pages/CTFwriteups/CTFwriteups'
 import Misc from './components/pages/Misc/Misc'
 import Resources from './components/pages/Resources/Resources'

@@ -4,10 +4,10 @@ import './Resources.css';
 import Aos from 'aos';
 
 function Resources () {
+
   useEffect (() => {
     Aos.init({duration: 800});
   }, []);
-
 
   return (
     <div className="resources-page">

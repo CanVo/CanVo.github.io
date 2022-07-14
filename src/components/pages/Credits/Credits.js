@@ -4,6 +4,7 @@ import './Credits.css';
 import Aos from 'aos';
 
 function Credits () {
+  
   useEffect (() => {
     Aos.init({duration: 800});
   }, []);

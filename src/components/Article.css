@@ -13,8 +13,7 @@
 .article-title {
     text-align: center;
     padding-top: 5%;
-    padding-bottom: calc(4vw + 4vh);
-    color: #2bbc8a;
+    color: #fff;
     font-family: 'JetBrains Mono', monospace;
 }
 
@@ -55,8 +54,6 @@
     /* Scales the image for smaller resolutons */
     max-width: 100%;
 }
-
-
 
 
 /* Resolution specific configs, above 1400px */

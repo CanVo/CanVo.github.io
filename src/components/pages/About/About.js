@@ -58,7 +58,7 @@ function About () {
               About The Blog
             </h1>
             <p>
-              I wanted a place to jot down and publish some notes of things I've worked on and have researched.</p>
+              I wanted a place to jot down and publish some notes of things I've worked on and have researched in my free time.</p>
             <p>  
               Additionally, I wanted to share some knowledge with others from the areas of my interest.
             </p>
