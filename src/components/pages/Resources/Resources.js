@@ -99,6 +99,10 @@ function Resources () {
             <li>
               <a href="https://guidedhacking.com/">Guided Hacking Forums</a>
             </li>
+
+            <li>
+              <a href="https://gamehacking.academy/about">Game Hacking Academy</a>
+            </li>
           </ul>
 
           <h1>
